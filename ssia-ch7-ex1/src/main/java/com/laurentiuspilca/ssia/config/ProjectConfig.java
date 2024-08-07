@@ -20,6 +20,7 @@ public class ProjectConfig extends WebSecurityConfigurerAdapter {
 
         var user1 = User.withUsername("john")
                         .password("12345")
+                        //.authorities("READ","WRITE")
                         .authorities("READ")
                         .build();
 
